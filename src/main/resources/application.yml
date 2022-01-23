@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/testDB
+    url: jdbc:postgresql://postgresqldb:5432/testDB
     username: postgres
     password: postgres
   jpa:
@@ -15,20 +15,20 @@ spring:
 
 #    show-sql: true
 
+#
+#server:
+#  port: 7575
+#  error:
+#    include-binding-errors: always
+#    include-message: always
 
-server:
-  port: 7575
-  error:
-    include-binding-errors: always
-    include-message: always
 
+#springdoc:
+#  api-docs:
+#    path: /home-openapi
+#
+#  use-management-port: true
 
-springdoc:
-  api-docs:
-    path: /home-openapi
-
-  use-management-port: true
-
-management:
-  server:
-    port: 7585
+#management:
+#  server:
+#    port: 7585
